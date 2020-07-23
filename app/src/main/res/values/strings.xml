@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Food Soufflé</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="registrar_usuario">Registrarse</string>
+    <string name="slogan">"Comer comida saludable es la forma más simple de librarse del exceso de peso y llegar a ser saludable y delgado para siempre". \n (Subodh Gupta)</string>
+</resources>

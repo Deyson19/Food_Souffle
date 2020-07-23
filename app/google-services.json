@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182165651328",
+    "firebase_url": "https://food-souffle.firebaseio.com",
+    "project_id": "food-souffle",
+    "storage_bucket": "food-souffle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182165651328:android:af7750f8987d5e055f8b65",
+        "android_client_info": {
+          "package_name": "com.foodsouffle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182165651328-mpgkkpgapu87u4fnos1kb0is0dqm8lrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foodsouffle",
+            "certificate_hash": "33790dc08fca27790e493fbb2f8711c7286eda3b"
+          }
+        },
+        {
+          "client_id": "182165651328-1ocdlt6oba215qkvmkjm78b32kaissb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqUpbj-0yTUOeUevIK4TKLkA1UzaXxsLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182165651328-1ocdlt6oba215qkvmkjm78b32kaissb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

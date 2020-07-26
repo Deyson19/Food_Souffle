@@ -36,7 +36,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
-                Intent intent = new Intent(ProfileActivity.this,MainActivity.class);
+                Intent intent = new Intent(ProfileActivity.this,MenuNavigation.class);
                 startActivity(intent);
                 finish();
             }

@@ -35,10 +35,8 @@ public class ProfileActivity extends AppCompatActivity {
         mButtonEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mAuth.signOut();
                 Intent intent = new Intent(ProfileActivity.this,MenuNavigation.class);
                 startActivity(intent);
-                finish();
             }
         });
         getUserInfo();

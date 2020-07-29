@@ -35,10 +35,4 @@
         android:label="@string/menu_contactar"
         tools:layout="@layout/contactar_fragment" />
 
-    <fragment
-        android:id="@+id/nav_perfil"
-        android:name="com.foodsouffle.ui.MiPerfil"
-        android:label="@string/menu_perfil"
-        tools:layout="@layout/mi_perfil_fragment"/>
-
 </navigation>

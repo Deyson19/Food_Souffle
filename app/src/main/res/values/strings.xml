@@ -18,4 +18,5 @@
     <string name="menu_ubicanos">Ubícanos</string>
     <string name="menu_contactar">Contactar</string>
     <string name="menu_perfil">Mi Perfil</string>
+    <string name="datosDelusuario">A continuación tus datos:</string>
 </resources>

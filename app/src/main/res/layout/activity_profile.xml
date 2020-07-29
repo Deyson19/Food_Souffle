@@ -46,24 +46,23 @@
                 android:fontFamily="@font/allerta_stencil"/>
 
         <TextView
+            android:id="@+id/textViewFrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:text="Bienvenido:"
+            android:textAlignment="center"
+            android:textColor="@color/datosUsuario"
+            android:textSize="15sp" />
+        <TextView
                 android:id="@+id/textViewName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text=" "
                 android:textAlignment="center"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp" />
-
-        <TextView
-                android:id="@+id/textViewMail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:gravity="center_horizontal"
-                android:text=" "
-                android:textAlignment="center"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorLogin"
                 android:textSize="15sp" />
 
         <Button

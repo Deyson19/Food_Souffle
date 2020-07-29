@@ -18,7 +18,7 @@
             android:title="@string/menu_slideshow" />
     </group>
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="all">
         <item
             android:id="@+id/nav_ubicanos"
             android:icon="@drawable/ic_menu_ubicanos"
@@ -27,9 +27,5 @@
             android:id="@+id/nav_contactar"
             android:icon="@drawable/ic_menu_contactar"
             android:title="@string/menu_contactar"/>
-        <item
-            android:id="@+id/nav_perfil"
-            android:icon="@drawable/ic_menu_perfil"
-            android:title="@string/menu_perfil"/>
     </group>
 </menu>

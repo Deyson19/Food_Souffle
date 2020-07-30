@@ -22,6 +22,8 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MenuNavigation extends AppCompatActivity {
 
+    //SH-1 33:79:0D:C0:8F:CA:27:79:0E:49:3F:BB:2F:87:11:C7:28:6E:DA:3B
+    //ID AIzaSyDk8UUUkSAimn3Mypnb9vf5IYKp0rPTJ5A
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -30,20 +32,13 @@ public class MenuNavigation extends AppCompatActivity {
         setContentView(R.layout.activity_menu_navigation);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_ubicanos,R.id.nav_contactar)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_ubicanos,R.id.nav_contactar,R.id.nav_ubicar)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

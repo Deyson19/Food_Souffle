@@ -18,24 +18,36 @@
             android:layout_marginBottom="1dp"
             app:srcCompat="@drawable/food_souffle"/>
 
-    <EditText
-            android:id="@+id/edtTextMail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/icon_email"
-            android:inputType="textEmailAddress"
-            android:hint="Correo"/>
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:errorEnabled="true"
+       android:layout_marginTop="10dp">
 
     <EditText
+        android:id="@+id/edtTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Ingresa tu Correo"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true"
+        android:layout_marginTop="5dp">
+
+        <EditText
             android:id="@+id/edtTextPwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/icon_lock"
             android:inputType="textPassword"
-            android:hint="Contraseña"/>
-
+            android:hint="Ingresa tu Contraseña"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -54,7 +66,7 @@
                 android:id="@+id/btnSendToResetPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/holo_green_dark"
                 android:text="¿Olvidaste tu contraseña?"
                 android:textColor="@android:color/white" />

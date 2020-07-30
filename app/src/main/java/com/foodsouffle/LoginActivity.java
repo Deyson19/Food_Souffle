@@ -13,6 +13,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.regex.Pattern;
+
 public class LoginActivity extends AppCompatActivity {
 
 
@@ -38,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         mButtonLogin = findViewById(R.id.btnLogin);
         mButtonResetPassword = findViewById(R.id.btnSendToResetPassword);
 
+
         //Le asignamos la debida funcion que deseamos hacer
 
         //Boton de iniciar sesión
@@ -50,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (!mail.isEmpty() && !password.isEmpty()){
                     loginUser();
                 }else{
-                    Toast.makeText(LoginActivity.this,"Debes rellenar los campos", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"Estos campos no pueden estar vacíos", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -75,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(i);
                     finish();
                 }else{
-                    Toast.makeText(LoginActivity.this,"No se ha podido iniciar sesion \n Debes comprobar tus datos",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"No se ha encontrado este usuario",Toast.LENGTH_LONG).show();
                 }
             }
         });

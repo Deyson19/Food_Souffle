@@ -35,4 +35,10 @@
         android:label="@string/menu_contactar"
         tools:layout="@layout/contactar_fragment" />
 
+     <activity
+        android:id="@+id/nav_ubicar"
+        android:name="com.foodsouffle.MapsActivity"
+        android:label="Ubicarnos"
+        tools:layout="@layout/activity_maps"/>
+
 </navigation>

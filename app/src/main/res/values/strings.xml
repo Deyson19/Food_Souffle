@@ -19,4 +19,5 @@
     <string name="menu_contactar">Contactar</string>
     <string name="menu_perfil">Mi Perfil</string>
     <string name="datosDelusuario">A continuación tus datos:</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

@@ -19,10 +19,12 @@
     </group>
 
     <group android:checkableBehavior="all">
-        <item
+
+        <!--<item
             android:id="@+id/nav_ubicanos"
             android:icon="@drawable/ic_menu_ubicanos"
             android:title="@string/menu_ubicanos"/>
+        -->
         <item
             android:id="@+id/nav_contactar"
             android:icon="@drawable/ic_menu_contactar"

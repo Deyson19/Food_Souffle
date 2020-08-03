@@ -23,11 +23,11 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
-    <fragment
+    <!--<fragment
         android:id="@+id/nav_ubicanos"
         android:name="com.foodsouffle.ui.Ubicanos"
         android:label="@string/menu_ubicanos"
-        tools:layout="@layout/ubicanos_fragment" />
+        tools:layout="@layout/ubicanos_fragment" />-->
 
     <fragment
         android:id="@+id/nav_contactar"

@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/contact"
     tools:context=".ui.Contactar">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/food_souffle" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/editTextTextMailto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5mm"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textEmailAddress"
+        android:text="@string/nav_header_subtitle" />
+
+    <EditText
+        android:id="@+id/editTextTextSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/asunto"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="5dp"
+        android:hint="@string/escribe_tu_mensaje"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/sendEmail"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/enviar"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+</LinearLayout>

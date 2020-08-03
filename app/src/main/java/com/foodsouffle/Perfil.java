@@ -1,13 +1,16 @@
 package com.foodsouffle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -40,8 +43,26 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
-                Intent i = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(i);
+                AlertDialog.Builder alerBuilder = new AlertDialog.Builder(Perfil.this);
+                alerBuilder.setTitle("Cerrar sesión");
+                alerBuilder.setMessage("¿Estas seguro que deseeas cerrar sesión?");
+                alerBuilder.setCancelable(false);
+
+
+                alerBuilder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                       onBackPressed();
+                    }
+                });
+                alerBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(Perfil.this,"Que bueno que te quedas",Toast.LENGTH_LONG).show();
+                    }
+                });
+                AlertDialog alertDialog = alerBuilder.create();
+                alertDialog.show();
             }
         });
         getUserInfo();
@@ -67,5 +88,7 @@ public class Perfil extends AppCompatActivity {
             }
         });
     }
-
+    public final void onBackPressed(){
+        finish();
+    }
 }

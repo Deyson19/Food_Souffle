@@ -28,9 +28,9 @@ public class Ubicanos extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.ubicanos_fragment, container, false);
+        final View view = inflater.inflate(R.layout.activity_maps, container, false);
 
-        final Button btn = view.findViewById(R.id.btnVerMapa);
+        /*final Button btn = view.findViewById(R.id.btnVerMapa);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +38,7 @@ public class Ubicanos extends Fragment {
                 Intent mapa = new Intent(getActivity(), MapsActivity.class);
                 startActivity(mapa);
             }
-        });
+        });*/
 
         return view;
     }

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/salir"
-        android:title="Salir"
-        app:showAsAction="never"/>
+
     <item
         android:id="@+id/perfil"
+        android:icon="@drawable/ic_menu_perfil"
         android:title="Mi perfil"
-        app:showAsAction="never"/>
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/salir"
+        android:icon="@drawable/ic_exit_to_app"
+        android:title="Salir"
+        app:showAsAction="never" />
 </menu>

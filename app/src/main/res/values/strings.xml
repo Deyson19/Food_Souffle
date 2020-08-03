@@ -7,9 +7,10 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Food Soufflé</string>
-    <string name="nav_header_subtitle">foodsouffle@mail.com</string>
+    <string name="nav_header_subtitle">deyson19@mail.com</string>
     <string name="nav_header_desc">Cabecera</string>
     <string name="action_settings">Configuración</string>
+    <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con drogas; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
 
     <!-- Aquí van los nombres de cada parte del menú-->
     <string name="menu_home">Inicio</string>
@@ -20,4 +21,11 @@
     <string name="menu_perfil">Mi Perfil</string>
     <string name="datosDelusuario">A continuación tus datos:</string>
     <string name="title_activity_maps">Map</string>
+    <string name="escribe_tu_mensaje">Escribe tu mensaje...</string>
+    <string name="enviar">Enviar</string>
+    <string name="asunto">Asunto</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="tu_correo">Tu Correo:</string>
+    <string name="tu_nombre">Tu Nombre:</string>
+    <string name="menu_disponible">Este es nuestro catálogo para hoy</string>
 </resources>

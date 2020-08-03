@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_gravity="bottom"
-            android:text="Este es nuestro catálogo para hoy"
+            android:text="@string/menu_disponible"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold"

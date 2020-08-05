@@ -23,12 +23,6 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 
-    <!--<fragment
-        android:id="@+id/nav_ubicanos"
-        android:name="com.foodsouffle.ui.Ubicanos"
-        android:label="@string/menu_ubicanos"
-        tools:layout="@layout/ubicanos_fragment" />-->
-
     <fragment
         android:id="@+id/nav_contactar"
         android:name="com.foodsouffle.ui.Contactar"
@@ -38,7 +32,13 @@
      <activity
         android:id="@+id/nav_ubicar"
         android:name="com.foodsouffle.MapsActivity"
-        android:label="Ubicarnos"
+        android:label="Ubícanos"
         tools:layout="@layout/activity_maps"/>
+
+    <fragment
+        android:id="@+id/nav_compartir"
+        android:name="com.foodsouffle.ui.CompartirApp"
+        android:label="@string/menu_compartir"
+        tools:layout="@layout/compartir_fragment" />
 
 </navigation>

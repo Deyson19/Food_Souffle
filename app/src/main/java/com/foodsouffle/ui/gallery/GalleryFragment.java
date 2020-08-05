@@ -22,7 +22,10 @@ import java.util.List;
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
+    int precios = 7500;
 
+    int incremento = (int) (precios*0.05);
+    int valorFinal = precios + incremento;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
@@ -31,15 +34,15 @@ public class GalleryFragment extends Fragment {
         final ImageSlider imageSlider = root.findViewById(R.id.slider);
 
         List<SlideModel> slideModels = new ArrayList<>();
-        slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu1.jpg","Image 1"));
-        slideModels.add(new SlideModel("https://cdn.pixabay.com/photo/2019/10/29/14/46/landscape-4587079_960_720.jpg","Image 2"));
-        slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu3.jpg","Image 3"));
+        slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu1.jpg","Menú 1 "+"$"+valorFinal));
+        slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu2.jpg","Menu 2 "+"$"+valorFinal));
+        slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu3.jpg","Menu 3"+"$"+valorFinal));
         slideModels.add(new SlideModel("https://cdn.pixabay.com/photo/2019/10/29/14/46/landscape-4587079_960_720.jpg","Image 4"));
         slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu5.jpg","Image 5"));
         slideModels.add(new SlideModel("https://cdn.pixabay.com/photo/2019/10/29/14/46/landscape-4587079_960_720.jpg","Image 6"));
         slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu7.jpg","Image 7"));
         slideModels.add(new SlideModel("http://playventv.byethost7.com/menu_disponible/menu8.jpg","Image 8"));
-        imageSlider.setImageList(slideModels,true);
+        imageSlider.setImageList(slideModels,false);
         return root;
     }
 }

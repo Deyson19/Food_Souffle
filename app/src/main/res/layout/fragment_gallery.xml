@@ -5,18 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@color/menuDisponible"
     tools:context=".ui.gallery.GalleryFragment">
 
     <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"
         android:id="@+id/slider"
-        app:auto_cycle="false"
+        app:auto_cycle="true"
         app:placeholder="@drawable/imagen_fondo"
-        app:error_image="@drawable/imagen_fondo"
-        app:delay="0"
+        app:delay="1"
         app:period="8000"
-        app:corner_radius="5"
+        app:corner_radius="25"
         android:layout_gravity="center_vertical"
+        android:animateLayoutChanges="true"
         android:layout_height="420dp">
     </com.denzcoskun.imageslider.ImageSlider>
 
@@ -26,7 +28,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="@string/menu_disponible"
             android:textAlignment="center"

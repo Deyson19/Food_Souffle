@@ -124,6 +124,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public final void onBackPressed(){
-        finish();
+        isDestroyed();
     }
 }

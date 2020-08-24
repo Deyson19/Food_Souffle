@@ -58,7 +58,6 @@ public class Perfil extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //Toast.makeText(Perfil.this,"Que bueno que te quedas",Toast.LENGTH_LONG).show();
-                        mAuth.getClass();
                         dialogInterface.dismiss();
                     }
                 });

@@ -42,7 +42,6 @@ public class Perfil extends AppCompatActivity {
         mButtonSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mAuth.signOut();
                 AlertDialog.Builder alerBuilder = new AlertDialog.Builder(Perfil.this);
                 alerBuilder.setTitle("Cerrar sesión");
                 alerBuilder.setMessage("¿Estas seguro que deseeas cerrar sesión?");
@@ -52,13 +51,15 @@ public class Perfil extends AppCompatActivity {
                 alerBuilder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                       onBackPressed();
+                       logoutPressed();
                     }
                 });
                 alerBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(Perfil.this,"Que bueno que te quedas",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(Perfil.this,"Que bueno que te quedas",Toast.LENGTH_LONG).show();
+                        mAuth.getClass();
+                        dialogInterface.dismiss();
                     }
                 });
                 AlertDialog alertDialog = alerBuilder.create();
@@ -89,6 +90,14 @@ public class Perfil extends AppCompatActivity {
         });
     }
     public final void onBackPressed(){
+        Intent intent = new Intent(getApplicationContext(),MenuNavigation.class);
+        startActivity(intent);
+    }
+
+    public final void logoutPressed(){
+        mAuth.signOut();
+        Intent intent = new Intent(Perfil.this,LoginActivity.class);
+        startActivity(intent);
         finish();
     }
 }

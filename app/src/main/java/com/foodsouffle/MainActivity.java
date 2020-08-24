@@ -123,4 +123,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
+    public final void onBackPressed(){
+        finish();
+    }
 }

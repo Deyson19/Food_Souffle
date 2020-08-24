@@ -17,6 +17,12 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
+    <activity
+        android:id="@+id/nav_menuCompleto"
+        android:name="com.foodsouffle.ui.MenuCompleto"
+        android:label="Menu Completo"
+        tools:layout="@layout/activity_menu_completo" />
+
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.foodsouffle.ui.slideshow.SlideshowFragment"

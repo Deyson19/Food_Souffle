@@ -32,4 +32,9 @@
     <string name="tu_correo">Tu Correo:</string>
     <string name="tu_nombre">Tu Nombre:</string>
     <string name="menu_disponible">Este es nuestro catálogo para hoy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- TODO: Nombre de las comidas-->
+    <string name="aguacate" translatable="false">Persea americana, llamado popularmente aguacate, es una especie arbórea del género Persea perteneciente a la familia Lauraceae, cuyo fruto, el aguacate es una baya comestible...</string>
 </resources>

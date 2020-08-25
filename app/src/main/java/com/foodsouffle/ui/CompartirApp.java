@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.foodsouffle.R;
 
@@ -22,6 +23,7 @@ public class CompartirApp extends Fragment {
     String enviar = "Hola, espero te encuentres bien. \n Te invito a que descargues esta aplicación para realizar pedidos desde casa. ";
     String linkApp = "Puedes descargarla desde este link: "+ "https://youtu.be/fVO6R-NQw-s?t=2780";
     String indicacion = "Por favor selecciona el medio por el cual desea compartir la aplicación";
+    String errorApp = "Error al intentar compartir por este medio, porfavor comprueba que tengas instalada la aplicación oficial de";
 
     public static CompartirApp newInstance() {
         return new CompartirApp();
@@ -54,37 +56,49 @@ public class CompartirApp extends Fragment {
         btnShareFace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent share = new Intent(Intent.ACTION_SEND);
-                share.setType("text/plain");
-                //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
-                share.setPackage("com.facebook.katana");
-                startActivity(share);
-
+                try {
+                    Intent share = new Intent(Intent.ACTION_SEND);
+                    share.setType("text/plain");
+                    //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
+                    share.putExtra(Intent.EXTRA_TEXT, enviar + linkApp);
+                    share.setPackage("com.facebook.katana");
+                    startActivity(share);
+                }catch (Exception e){
+                    Toast.makeText(getContext(),errorApp+" Facebook",Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         btnShareInsta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent share = new Intent(Intent.ACTION_SEND);
-                share.setType("text/plain");
-                //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
-                share.setPackage("com.instagram.android");
-                startActivity(share);
+                try {
+                    Intent share = new Intent(Intent.ACTION_SEND);
+                    share.setType("text/plain");
+                    //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
+                    share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
+                    share.setPackage("com.instagram.android");
+                    startActivity(share);
+                }catch (Exception e){
+                    Toast.makeText(getContext(),errorApp+"Instagram",Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
         btnShareWhats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent share = new Intent(Intent.ACTION_SEND);
-                share.setType("text/plain");
-               // share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
-                share.setPackage("com.whatsapp");
-                startActivity(share);
+                try {
+                    Intent share = new Intent(Intent.ACTION_SEND);
+                    share.setType("text/plain");
+                    // share.putExtra(Intent.EXTRA_SUBJECT,enviar);
+                    share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
+                    share.setPackage("com.whatsapp");
+                    startActivity(share);
+                }catch (Exception e){
+                    Toast.makeText(getContext(),errorApp+" WhatsApp",Toast.LENGTH_LONG).show();
+                }
             }
         });
         return view;

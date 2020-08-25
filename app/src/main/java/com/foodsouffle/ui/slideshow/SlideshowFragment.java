@@ -34,6 +34,7 @@ public class SlideshowFragment extends Fragment {
         webView.setWebViewClient(new WebViewClient());
         webView.canGoForward();
         webSettings.getCacheMode();
+        webSettings.setAppCacheEnabled(true);
         webView.loadUrl("https://formfacade.com/sm/7mMwdqzCL");
 
         return root;

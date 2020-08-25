@@ -10,7 +10,7 @@
     <string name="nav_header_subtitle">deyson19@mail.com</string>
     <string name="nav_header_desc">Cabecera</string>
     <string name="action_settings">Configuración</string>
-    <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con drogas; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
+    <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con medicamentos; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
     <string name="mensaje_compartir">Si te ha gustado nuestra aplicación te invitamos a que la compartas con tus amigos o familiares.\n Sería magnifico que nos ayudes a llegar a más personas.</string>
 
     <!-- Aquí van los nombres de cada parte del menú-->
@@ -31,7 +31,7 @@
     <string name="cerrar_sesion">Cerrar Sesion</string>
     <string name="tu_correo">Tu Correo:</string>
     <string name="tu_nombre">Tu Nombre:</string>
-    <string name="menu_disponible">Este es nuestro catálogo para hoy</string>
+    <string name="menu_disponible">Este es nuestro catálogo.</string>
     <!-- TODO: Remove or change this placeholder text -->
 
 

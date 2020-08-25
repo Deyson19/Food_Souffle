@@ -30,7 +30,7 @@
         android:id="@+id/textViewName"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:drawableStart="@drawable/ic_menu_perfil"
+        android:drawableStart="@drawable/ic_user"
         android:text="@string/tu_nombre"
         android:textAlignment="center"
         android:textSize="18sp"

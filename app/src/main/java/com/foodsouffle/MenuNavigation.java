@@ -61,6 +61,7 @@ public class MenuNavigation extends AppCompatActivity {
             builder.setCancelable(false);
             builder.setTitle("Salir");
             builder.setMessage("¿Estas seguro que deseas salir?");
+            builder.setIcon(R.drawable.ic_warning);
             builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.foodsouffle.Perfil"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Nothing"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_more">
+        <menu>
+            <item
+                android:id="@+id/back"
+                android:icon="@drawable/ic_back"
+                android:title="Back"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="Exit"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

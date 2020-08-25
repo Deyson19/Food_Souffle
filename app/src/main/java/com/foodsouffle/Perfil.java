@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -98,5 +100,43 @@ public class Perfil extends AppCompatActivity {
         Intent intent = new Intent(Perfil.this,LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_profile,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+            if(item.getItemId()==R.id.exit){
+                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setCancelable(false);
+                builder.setTitle("Salir");
+                builder.setMessage("¿Estas seguro que deseas salir?");
+                builder.setIcon(R.drawable.ic_warning);
+                builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent exit = new Intent(Perfil.this,ProfileActivity.class);
+                        startActivity(exit);
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                builder.create().show();
+            }else{
+                if (item.getItemId()==R.id.back){
+                    Intent i = new Intent(getApplicationContext(),MenuNavigation.class);
+                    startActivity(i);
+                }
+            }
+            return super.onOptionsItemSelected(item);
     }
 }

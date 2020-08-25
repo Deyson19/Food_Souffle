@@ -1,13 +1,23 @@
 package com.foodsouffle.ui;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.foodsouffle.AdapterList;
 import com.foodsouffle.ListPojo;
+import com.foodsouffle.MenuNavigation;
+import com.foodsouffle.Perfil;
 import com.foodsouffle.R;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -50,5 +60,28 @@ public class MenuCompleto extends AppCompatActivity {
         list.add(new ListPojo("Menu 6",R.string.menu6, menu6, R.drawable.menu6));
         list.add(new ListPojo("Menu 7",R.string.menu7, menu7, R.drawable.menu7));
         list.add(new ListPojo("Menu 8",R.string.menu8, menu8, R.drawable.menu8));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_all_food, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.perfil:
+                Intent profile = new Intent(this, Perfil.class);
+                startActivity(profile);
+                return true;
+            case R.id.back:
+                Intent intent = new Intent(getApplicationContext(), MenuNavigation.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 }

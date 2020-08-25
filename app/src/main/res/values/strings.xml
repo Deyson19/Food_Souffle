@@ -16,7 +16,7 @@
     <!-- Aquí van los nombres de cada parte del menú-->
     <string name="menu_home">Inicio</string>
     <string name="menu_gallery">Menú Disponible</string>
-    <string name="menu_slideshow">Ordenar</string>
+    <string name="menu_slideshow">Realizar Pedido</string>
     <string name="menu_ubicanos">Ubícanos</string>
     <string name="menu_contactar">Contactar</string>
     <string name="menu_compartir">Compartir App</string>
@@ -36,5 +36,12 @@
 
 
     <!-- TODO: Nombre de las comidas-->
-    <string name="aguacate" translatable="false">Persea americana, llamado popularmente aguacate, es una especie arbórea del género Persea perteneciente a la familia Lauraceae, cuyo fruto, el aguacate es una baya comestible...</string>
+    <string name="menu1" translatable="false">Arroz, Platano maduro frito, carne desmechada, frijoles y Quatro- De 1,75 Litros -</string>
+    <string name="menu2" translatable="false">Pizza de Pepperoni Mediana de 8 porciones / Salsa Tomates frescos y Sprite -De 1,75 Litros-</string>
+    <string name="menu3" translatable="false">Arroz, carne de cerdo, ensalada de tomate con zanahoria y lechuga. Fuze Tea durazno- De 400 ml -.</string>
+    <string name="menu4" translatable="false">Arroz, sanchocho de carne de res y Fuze Tea limón- De 400 ml -</string>
+    <string name="menu5" translatable="false">Sandwich: jamón, tomate, queso y Coca-Cola zero- De 1,75 Litros -</string>
+    <string name="menu6" translatable="false">Caldo de camarones con mazorca, arepa y aguapanela caliente.</string>
+    <string name="menu7" translatable="false">Tacos de carne desmechada, zanahoria y Coca-Cola de 1,5 Litros</string>
+    <string name="menu8" translatable="false">Tacos de carne de res picada, lechuga, salsa de tomate y Coca-Cola light- De 1,5 Litros -</string>
 </resources>

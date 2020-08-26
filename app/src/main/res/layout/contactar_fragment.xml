@@ -9,24 +9,22 @@
     android:background="@color/contact"
     tools:context=".ui.Contactar">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="380dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="1dp"
-        app:srcCompat="@drawable/food_souffle" />
+    <!-- <ImageView
+         android:id="@+id/imageView"
+         android:layout_width="380dp"
+         android:layout_height="100dp"
+         android:layout_gravity="center"
+         android:layout_marginTop="1dp"
+         app:srcCompat="@drawable/food_souffle" />
+-->
 
-    <EditText
-        android:id="@+id/editTextTextMailto"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5mm"
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
-        android:inputType="textEmailAddress"
-        android:text="@string/nav_header_subtitle" />
-
+        android:textColor="#FFEB3B"
+        android:textAlignment="center"
+        android:background="#3A4145"
+        android:text="Por favor completa el siguiente formulario"/>
     <EditText
         android:id="@+id/editTextTextSub"
         android:layout_width="match_parent"
@@ -50,7 +48,8 @@
         android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="bottom"
         android:background="@color/sendEmail"
         android:fontFamily="@font/bree_serif"
         android:text="@string/enviar"

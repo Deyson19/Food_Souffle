@@ -91,7 +91,7 @@ public class Perfil extends AppCompatActivity {
         });
     }
     public final void onBackPressed(){
-        Intent intent = new Intent(getApplicationContext(),MenuNavigation.class);
+        Intent intent = new Intent(Perfil.this,MenuNavigation.class);
         startActivity(intent);
     }
 
@@ -111,29 +111,13 @@ public class Perfil extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
             if(item.getItemId()==R.id.exit){
-                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setCancelable(false);
-                builder.setTitle("Salir");
-                builder.setMessage("¿Estas seguro que deseas salir?");
-                builder.setIcon(R.drawable.ic_warning);
-                builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent exit = new Intent(Perfil.this,ProfileActivity.class);
-                        startActivity(exit);
-                        finish();
-                    }
-                });
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-                builder.create().show();
+                Intent exit = new Intent(Perfil.this,ProfileActivity.class);
+                startActivity(exit);
+                finish();
+                isDestroyed();
             }else{
                 if (item.getItemId()==R.id.back){
-                    Intent i = new Intent(getApplicationContext(),MenuNavigation.class);
+                    Intent i = new Intent(Perfil.this,MenuNavigation.class);
                     startActivity(i);
                 }
             }

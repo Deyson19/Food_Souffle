@@ -31,7 +31,7 @@ public class Contactar extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.contactar_fragment, container, false);
 
-        final EditText editTextTo = root.findViewById(R.id.editTextTextMailto);
+        //final EditText editTextTo = root.findViewById(R.id.editTextTextMailto);
         final EditText editTextSubject = root.findViewById(R.id.editTextTextSub);
         final EditText editTextMessage = root.findViewById(R.id.editTextTextMensaje);
         final Button sendEmail = root.findViewById(R.id.btnEnviar);

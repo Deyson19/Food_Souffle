@@ -79,11 +79,16 @@ public class MenuNavigation extends AppCompatActivity {
             if (item.getItemId()==R.id.perfil){
                 Intent i = new Intent(getApplicationContext(),Perfil.class);
                 startActivity(i);
+                finish();
             }
         }
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 
     @Override
     public boolean onSupportNavigateUp() {

@@ -25,7 +25,7 @@
 
     <string name="datosDelusuario">A continuación tus datos:</string>
     <string name="title_activity_maps">Map</string>
-    <string name="escribe_tu_mensaje">Escribe tu mensaje...</string>
+    <string name="escribe_tu_mensaje">Escribe tu mensaje...máximo 100 caracteres</string>
     <string name="enviar">Enviar</string>
     <string name="asunto">Asunto</string>
     <string name="cerrar_sesion">Cerrar Sesion</string>

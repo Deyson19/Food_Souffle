@@ -20,9 +20,6 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_ordenar"
             android:title="@string/menu_slideshow" />
-    </group>
-
-    <group android:checkableBehavior="all">
         <item
             android:id="@+id/nav_contactar"
             android:icon="@drawable/ic_menu_contactar"
@@ -32,20 +29,18 @@
             android:icon="@drawable/ic_menu_ubicanos"
             android:title="@string/menu_ubicanos"/>
     </group>
-    <item android:title="Share">
-        <menu>
+    <group android:checkableBehavior="all">
         <item
             android:id="@+id/nav_compartir"
             android:icon="@drawable/ic_menu_share"
             android:title="@string/menu_compartir"/>
-        </menu>
-    </item>
-    <item android:title="@string/developer">
-        <menu>
-            <item
-                android:id="@+id/nav_developer"
-                android:icon="@drawable/ic_developer"
-                android:title="@string/developer"/>
-        </menu>
-    </item>
+        <item android:title="@string/developer">
+            <menu>
+                <item
+                    android:id="@+id/nav_developer"
+                    android:icon="@drawable/ic_developer"
+                    android:title="@string/developer"/>
+            </menu>
+        </item>
+    </group>
 </menu>

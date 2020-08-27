@@ -37,7 +37,7 @@ public class Developer extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    String to = "deyandres19@gmail.com" + "deiandresvent@hotmail.com";
+                    String to = "deyandres19@gmail.com" + ","+ "deiandresvent@hotmail.com";
                     String optionsEmailClient = "Select email client:";
 
                     Intent email = new Intent(Intent.ACTION_SEND);

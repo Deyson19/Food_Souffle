@@ -1,80 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/containerShareApp"
     android:background="@color/colorCompartir"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="10dp"
     tools:context=".ui.CompartirApp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:padding="1dp"
-        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/mensaje_compartir"
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:background="#388E3C">
+            <TextView
+                android:id="@+id/mensaje_compartir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/mensaje_compartirEnglish"
+                android:textAlignment="gravity"
+                android:textStyle="italic"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:fontFamily="@font/allerta_stencil"/>
+            <Button
+                android:id="@+id/compartir"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/share" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#ffffff"
+            android:layout_marginTop="250sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:fontFamily="@font/allerta_stencil"
+                android:text="Share on:"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_below="@id/rl2"
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/mensaje_compartir"
-            android:textAlignment="center"
-            android:textStyle="italic"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="18sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:fontFamily="@font/allerta_stencil"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/compartir"
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:background="@drawable/share" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_marginTop="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"
-            android:textSize="16sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:fontFamily="@font/allerta_stencil"
-            android:text="Compartir en redes sociales:"/>
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="#ffb64b">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/facebook"
                     android:layout_width="50dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_height="50dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/facebook"/>
+                    android:background="@drawable/facebook" />
 
                 <Button
                     android:id="@+id/instagram"
                     android:layout_width="50dp"
-                    android:layout_height="35dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/instagram"/>
@@ -82,12 +93,13 @@
                 <Button
                     android:id="@+id/whatsapp"
                     android:layout_width="50dp"
-                    android:layout_height="35dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/whatsapp"/>
             </LinearLayout>
+        </RelativeLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

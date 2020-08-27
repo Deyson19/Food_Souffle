@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@color/contact"
-    tools:context=".ui.Contactar">
+    android:background="@color/developerFragment"
+    tools:context=".ui.Developer">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,50 +22,32 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="380dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="1dp"
-                app:srcCompat="@drawable/food_souffle" />
+                app:srcCompat="@drawable/developer_image" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/developerDescription"
+                android:textAlignment="gravity"
                 android:textColor="#FFEB3B"
-                android:textAlignment="center"
-                android:background="#3A4145"
-                android:textSize="15sp"
-                android:text="@string/mensajeContactar"/>
-            <EditText
-                android:id="@+id/editTextTextSub"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:fontFamily="monospace"
-                android:hint="@string/asunto"
-                android:layout_marginTop="10dp"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/editTextTextMensaje"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine"
-                android:layout_marginTop="10dp"
-                android:hint="@string/escribe_tu_mensaje"/>
+                android:textSize="15sp" />
 
             <Button
-                android:id="@+id/btnEnviar"
+                android:id="@+id/btnSendToDeveloper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_gravity="bottom"
-                android:background="@color/sendEmail"
+                android:background="@color/developerContact"
                 android:fontFamily="@font/bree_serif"
-                android:text="@string/enviar"
-                android:textColor="@android:color/background_light"
+                android:text="@string/developerContact"
+                android:textColor="@android:color/black"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

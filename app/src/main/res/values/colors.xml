@@ -15,4 +15,8 @@
     <color name="themeColor">#E6EE9C</color>
     <color name="colorCompartir">#007785</color>
     <color name="menuDisponible">#F6D819</color>
+    <color name="developerFragment">#009688</color>
+    <color name="developerContact">#FF9800</color>
+    <color name="itemSelect">#171716</color>
+    <color name="colorItemMenu">#4CAF50</color>
 </resources>

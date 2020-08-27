@@ -42,13 +42,14 @@ public class Contactar extends Fragment {
                 String to = "deyson19@mail.com";
                 String subject = editTextSubject.getText().toString();
                 String message = editTextMessage.getText().toString();
+                String optionsEmailClient = "Select email client:";
 
                 Intent email = new Intent(Intent.ACTION_SEND);
                 email.putExtra(Intent.EXTRA_EMAIL,new String[]{to});
                 email.putExtra(Intent.EXTRA_SUBJECT,subject);
                 email.putExtra(Intent.EXTRA_TEXT,message);
                 email.setType("message/rfc822");
-                startActivity(Intent.createChooser(email,"Selecciona tu servidor de correo:"));
+                startActivity(Intent.createChooser(email,optionsEmailClient));
             }
         });
 

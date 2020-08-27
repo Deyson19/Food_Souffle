@@ -47,4 +47,10 @@
         android:label="@string/menu_compartir"
         tools:layout="@layout/compartir_fragment" />
 
+    <fragment
+        android:id="@+id/nav_developer"
+        android:name="com.foodsouffle.ui.Developer"
+        android:label="@string/developer"
+        tools:layout="@layout/developer_fragment" />
+
 </navigation>

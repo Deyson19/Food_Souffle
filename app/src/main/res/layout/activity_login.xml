@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:inputType="textEmailAddress"
-        android:hint="Ingresa tu Correo"/>
+        android:hint="@string/textEmail"/>
 
 </com.google.android.material.textfield.TextInputLayout>
 
@@ -46,30 +46,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="Ingresa tu Contraseña"/>
+            android:hint="@string/textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:background="@color/colorLogin"
+            android:text="@string/login" />
 
         <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorLogin"
-                android:text="Iniciar Sesion" />
-
-        <Button
-                android:id="@+id/btnSendToResetPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/holo_green_dark"
-                android:text="¿Olvidaste tu contraseña?"
-                android:textColor="@android:color/white" />
-
+            android:id="@+id/btnSendToResetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="@string/forgotPassword"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>

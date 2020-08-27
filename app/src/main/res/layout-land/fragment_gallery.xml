@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="2dp"
-    android:background="@color/menuDisponible"
+    android:background="@color/menuAvailableHorizontalView"
     tools:context=".ui.gallery.GalleryFragment">
 
     <com.denzcoskun.imageslider.ImageSlider
@@ -14,12 +14,12 @@
         android:id="@+id/slider"
         app:auto_cycle="true"
         app:placeholder="@drawable/imagen_fondo"
-        app:delay="50"
+        app:delay="5"
         app:period="8000"
-        app:corner_radius="25"
-        android:layout_gravity="center_vertical"
+        android:textAlignment="gravity"
+        android:layout_gravity="center_horizontal"
         android:animateLayoutChanges="true"
-        android:layout_height="420dp">
+        android:layout_height="match_parent">
     </com.denzcoskun.imageslider.ImageSlider>
 
     <LinearLayout

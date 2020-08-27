@@ -1,7 +1,19 @@
 <resources>
     <string name="app_name">Food Soufflé</string>
-    <string name="iniciar_sesi_n">Log In</string>
-    <string name="registrar_usuario">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="loginEs">Iniciar Sesión</string>
+    <string name="registerUser">Sign Up</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="textUserName">Please enter an User Name</string>
+    <string name="textUserNameEs">Ingresa un nombre de usuario</string>
+    <string name="textEmail">Please enter your e-mail address</string>
+    <string name="textEmailEs">Ingresa tu dirección de correo</string>
+    <string name="textPassword">Please enter your password</string>
+    <string name="textPasswordEs">Ingresa tu contraseña</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="forgotPasswordEs">¿Olvidaste tu contraseña?</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="resetPasswordEs">Recuperar Contraseña</string>
     <string name="slogan">"Comer comida saludable es la forma más simple de librarse del exceso de peso y llegar a ser saludable y delgado para siempre". \n (Subodh Gupta)</string>
     <string name="sloganEnglis">"Eating healthy food is the simplest way to shed excess weight and become healthy and slim forever." \ n (Subodh Gupta)</string>
     <string name="title_activity_menu_navigation">Menu Navigation</string>
@@ -11,14 +23,14 @@
     <string name="nav_header_subtitle">deyson19@mail.com</string>
     <string name="nav_header_desc">Header</string>
     <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con medicamentos; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
-    <string name="mensajeInicioEnglish">"The doctor of the future will no longer treat human beings with medicine; he will cure and prevent diseases with nutrition." \ n (Thomas Edison)</string>
+    <string name="mensajeInicioEnglish">"The doctor of the future will no longer treat human beings with medicine; he will cure and prevent diseases with nutrition." \n (Thomas Edison)</string>
     <string name="mensaje_compartir">Si te ha gustado nuestra aplicación te invitamos a que la compartas con tus amigos o familiares. Sería magnifico que nos ayudes a llegar a más personas.</string>
     <string name="mensaje_compartirEnglish">If you liked our application, we invite you to share it with your friends or family. It would be great if you help us reach more people.</string>
 
     <!-- Aquí van los nombres de cada parte del menú-->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Menu</string>
-    <string name="menu_avaible">Menu Available</string>
+    <string name="menu_available">Menu Available</string>
     <string name="menu_slideshow">Make an order</string>
     <string name="menu_ubicanos">Location</string>
     <string name="menu_contactar">Contact Us</string>
@@ -27,6 +39,7 @@
 
 
     <string name="datosDelusuario">And Now \n Your Information:</string>
+    <string name="userDatesHorizontalView">And now, your information</string>
     <string name="title_activity_maps">Map</string>
     <string name="escribe_tu_mensaje">Please enter your message...</string>
     <string name="enviar">Send Message</string>

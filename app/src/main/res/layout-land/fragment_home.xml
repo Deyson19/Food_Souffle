@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00796B"
+    android:background="#388E3C"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="5dp"
@@ -14,13 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageViewLogo"
             android:layout_width="345dp"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/food_souffle"
             tools:ignore="ContentDescription" />
     </LinearLayout>
@@ -28,8 +27,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical">
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textViewMensajeInicio"
@@ -37,7 +36,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:gravity="center_horizontal"
-            android:text="@string/mensajeInicio"
+            android:text="@string/mensajeInicioEnglish"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/common_google_signin_btn_text_dark_default"

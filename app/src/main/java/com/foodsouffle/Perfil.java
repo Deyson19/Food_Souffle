@@ -119,6 +119,8 @@ public class Perfil extends AppCompatActivity {
                 if (item.getItemId()==R.id.back){
                     Intent i = new Intent(Perfil.this,MenuNavigation.class);
                     startActivity(i);
+                    finish();
+                    isDestroyed();
                 }
             }
             return super.onOptionsItemSelected(item);

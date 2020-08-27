@@ -18,6 +18,7 @@
     <!-- Aquí van los nombres de cada parte del menú-->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Menu</string>
+    <string name="menu_avaible">Menu Available</string>
     <string name="menu_slideshow">Make an order</string>
     <string name="menu_ubicanos">Location</string>
     <string name="menu_contactar">Contact Us</string>
@@ -25,14 +26,14 @@
     <string name="menu_perfil">My Profile</string>
 
 
-    <string name="datosDelusuario">Your Information:</string>
+    <string name="datosDelusuario">And Now \n Your Information:</string>
     <string name="title_activity_maps">Map</string>
     <string name="escribe_tu_mensaje">Please enter your message...</string>
     <string name="enviar">Send Message</string>
     <string name="asunto">Subject</string>
     <string name="cerrar_sesion">Log Out</string>
-    <string name="tu_correo">Your mail:</string>
-    <string name="tu_nombre">Your name:</string>
+    <string name="tu_correo">User e-mail:</string>
+    <string name="tu_nombre">User name:</string>
     <string name="menu_disponible">This is our catalog.</string>
     <string name="mensajeContactar">To get in touch with us please complete the following form.</string>
     <!-- TODO: Remove or change this placeholder text -->

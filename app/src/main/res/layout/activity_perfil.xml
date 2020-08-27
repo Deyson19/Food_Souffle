@@ -18,7 +18,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:text="@string/datosDelusuario"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
@@ -29,7 +29,7 @@
     <TextView
         android:id="@+id/textViewName"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:drawableStart="@drawable/ic_user"
         android:text="@string/tu_nombre"
         android:textAlignment="center"

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Food Soufflé</string>
     <string name="login">Log In</string>
     <string name="loginEs">Iniciar Sesión</string>
@@ -6,16 +6,16 @@
     <string name="registrarse">Registrarse</string>
     <string name="textUserName">Please enter an User Name</string>
     <string name="textUserNameEs">Ingresa un nombre de usuario</string>
-    <string name="textEmail">Please enter your e-mail address</string>
+    <string name="textEmail">Please enter your email address</string>
     <string name="textEmailEs">Ingresa tu dirección de correo</string>
     <string name="textPassword">Please enter your password</string>
     <string name="textPasswordEs">Ingresa tu contraseña</string>
-    <string name="forgotPassword">Forgot Password?</string>
+    <string name="forgotPassword">Did you forget your password?</string>
     <string name="forgotPasswordEs">¿Olvidaste tu contraseña?</string>
     <string name="resetPassword">Reset Password</string>
     <string name="resetPasswordEs">Recuperar Contraseña</string>
     <string name="slogan">"Comer comida saludable es la forma más simple de librarse del exceso de peso y llegar a ser saludable y delgado para siempre". \n (Subodh Gupta)</string>
-    <string name="sloganEnglis">"Eating healthy food is the simplest way to shed excess weight and become healthy and slim forever." \ n (Subodh Gupta)</string>
+    <string name="sloganEnglish">"Eating healthy food is the simplest way to shed excess weight and become healthy and slim forever." \ n (Subodh Gupta)</string>
     <string name="title_activity_menu_navigation">Menu Navigation</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -66,4 +66,18 @@
     <string name="developer">Developer</string>
     <string name="developerDescription">Hello everyone, my name is Deyson Vente, I am currently a Software Development student and I am the one who has developed this application. For me it is a pleasure to be able to share with you a little of what I have been learning, I am still in the beginner phase and my purpose is to become a professional in this field. \n I have been developing this application thanks to various sources of information and training that I have visited. I have resorted to the use of libraries and plugins that Google provides for its community.</string>
     <string name="developerContact">Contact Me</string>
+
+    <!--TODO:revisamos el estado de la conexion a internet-->
+    <string name="conexionError">Please check your internet conexion!!</string>
+    <string name="conexionErrorEs">Por favor, revisa tu conexion a internet!!</string>
+
+    <!-- TODO:mensajes de error al intenetar registrarse o entrar-->
+    <string name="shortPassword">ERROR, please enter a valid password, greater than 5 characters</string>
+    <string name="emptyValu">Hey, this field cannot be empty, check the information</string>
+    <string name="errorToCreate">ERROR, we could not create this user.\n Try again</string>
+    <string name="errorToRegister">ERROR, please try with another username and password</string>
+    <string name="errorToFindUser" tools:ignore="StringEscaping">Sorry, we couldn't find this user </string>
+
+    <!--TODO:Mensaje de confirmacion antes de salir-->
+    <string name="exitMessage">Are you sure you want to quit?</string>
 </resources>

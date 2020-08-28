@@ -1,6 +1,10 @@
 package com.foodsouffle;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     DatabaseReference mDatabase;
 
+    Toast toastPosition;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
         mButtonRegister = findViewById(R.id.btnRegister);
         mButtonLogin = findViewById(R.id.btnLogin);
 
+        if (isOnline()) {
+            toastPosition = Toast.makeText(this,"Welcome Back",Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.TOP,0,80);
+            toastPosition.show();
+        } else {
+            toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.TOP,0,80);
+            toastPosition.show();
+        }
+
         mButtonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,11 +77,11 @@ public class MainActivity extends AppCompatActivity {
                     if(password.length()>=5){
                         registerUser();
                     }else{
-                        Toast.makeText(MainActivity.this,"Tu contraseña debe tener al menos 5 caracteres",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this,R.string.shortPassword,Toast.LENGTH_LONG).show();
                     }
 
                 }else{
-                    Toast.makeText(MainActivity.this,"Debes llenar todos los campos",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,R.string.emptyValu,Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -102,12 +118,12 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(i);
                                 finish();
                             }else{
-                                Toast.makeText(MainActivity.this,"No se pudiero crear los datos",Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this,R.string.errorToCreate,Toast.LENGTH_LONG).show();
                             }
                         }
                     });
                 }else {
-                    Toast.makeText(MainActivity.this,"No se ha podido registar el usuario",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,R.string.errorToRegister,Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -125,5 +141,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public final void onBackPressed(){
         isDestroyed();
+    }
+
+    /**
+     * Check for Internet Connection, return true if connected else false
+     **/
+    private boolean isOnline() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

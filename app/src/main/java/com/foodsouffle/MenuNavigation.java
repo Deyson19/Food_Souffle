@@ -22,8 +22,6 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MenuNavigation extends AppCompatActivity {
 
-    //SH-1 33:79:0D:C0:8F:CA:27:79:0E:49:3F:BB:2F:87:11:C7:28:6E:DA:3B
-    //ID AIzaSyDk8UUUkSAimn3Mypnb9vf5IYKp0rPTJ5A
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -59,10 +57,10 @@ public class MenuNavigation extends AppCompatActivity {
         if(item.getItemId()==R.id.salir){
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setCancelable(false);
-            builder.setTitle("Salir");
-            builder.setMessage("¿Estas seguro que deseas salir?");
+            builder.setTitle("Exit");
+            builder.setMessage(R.string.exitMessage);
             builder.setIcon(R.drawable.ic_warning);
-            builder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     finish();

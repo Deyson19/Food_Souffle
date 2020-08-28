@@ -4,9 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,6 +33,8 @@ public class Perfil extends AppCompatActivity {
     Button mButtonSignOut;
     FirebaseAuth mAuth;
     DatabaseReference mDataBase;
+
+    Toast toastPosition;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,16 +47,26 @@ public class Perfil extends AppCompatActivity {
         mTextViewName = findViewById(R.id.textViewName);
         mTextViewMail = findViewById(R.id.textViewMail);
 
+        if (isOnline()) {
+            toastPosition = Toast.makeText(this,"Hello",Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.BOTTOM,0,0);
+            toastPosition.show();
+        } else {
+            toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.BOTTOM,0,0);
+            toastPosition.show();
+        }
+
         mButtonSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alerBuilder = new AlertDialog.Builder(Perfil.this);
-                alerBuilder.setTitle("Cerrar sesión");
-                alerBuilder.setMessage("¿Estas seguro que deseeas cerrar sesión?");
+                alerBuilder.setTitle("Log Out");
+                alerBuilder.setMessage(R.string.exitMessage);
                 alerBuilder.setCancelable(false);
 
 
-                alerBuilder.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                alerBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        logoutPressed();
@@ -68,6 +84,17 @@ public class Perfil extends AppCompatActivity {
             }
         });
         getUserInfo();
+    }
+    /**
+     * Check for Internet Connection, return true if connected else false
+     **/
+    private boolean isOnline() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     private void getUserInfo() {

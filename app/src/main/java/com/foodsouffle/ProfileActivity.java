@@ -1,7 +1,11 @@
 package com.foodsouffle;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +26,9 @@ public class ProfileActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference mDataBase;
 
+    Toast toastPosition;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +39,18 @@ public class ProfileActivity extends AppCompatActivity {
 
         mButtonEntrar = findViewById(R.id.btnEntrar);
         mTextViewName = findViewById(R.id.textViewName);
+
+
+        if (isOnline()) {
+            toastPosition = Toast.makeText(this,"Welcome Back",Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.TOP,0,80);
+            toastPosition.show();
+        } else {
+            toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
+            toastPosition.setGravity(Gravity.TOP,0,80);
+            toastPosition.show();
+        }
+
 
         mButtonEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,24 +85,24 @@ public class ProfileActivity extends AppCompatActivity {
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setTitle("Atención:");
-        builder.setMessage("¿Qué deseas hacer?");
+        builder.setTitle("Attention:");
+        builder.setMessage("What do you want to do?");
         builder.setIcon(R.drawable.ic_warning);
-        builder.setPositiveButton("Salir", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
                 isDestroyed();
             }
         });
-        builder.setNeutralButton("Nada", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton("Nothing", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(ProfileActivity.this,"Que bueno que te quedas",Toast.LENGTH_LONG).show();
+                Toast.makeText(ProfileActivity.this,"Awesome, thanks for staying.",Toast.LENGTH_LONG).show();
             }
         });
 
-        builder.setNegativeButton("Volver al Menú Principal", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Back to Menu", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent exit = new Intent(ProfileActivity.this,MenuNavigation.class);
@@ -91,5 +110,17 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
         builder.create().show();
+    }
+
+    /**
+     * Check for Internet Connection, return true if connected else false
+     **/
+    private boolean isOnline() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

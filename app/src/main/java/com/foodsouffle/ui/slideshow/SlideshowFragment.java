@@ -36,6 +36,8 @@ public class SlideshowFragment extends Fragment {
         webSettings.getCacheMode();
         webSettings.setAppCacheEnabled(true);
         webView.loadUrl("https://formfacade.com/sm/7mMwdqzCL");
+        webView.clearCache(false);
+        webSettings.setUseWideViewPort(true);
 
         return root;
     }

@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/mensaje_compartirEnglish"
+                android:text="@string/mensaje_compartir"
                 android:textAlignment="gravity"
                 android:textStyle="italic"
                 android:textColor="@color/common_google_signin_btn_text_dark_default"

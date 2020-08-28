@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/amaranth"
             android:gravity="center_horizontal"
-            android:text="@string/mensajeInicioEnglish"
+            android:text="@string/mensajeInicio"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/common_google_signin_btn_text_dark_default"

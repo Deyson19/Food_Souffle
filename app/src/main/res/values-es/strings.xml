@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Food Soufflé</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="registerUser">Registrarse</string>
+    <string name="textUserName">Ingresa un nombre de usuario</string>
+    <string name="textEmail">Ingresa tu dirección de correo</string>
+    <string name="textPassword">Ingresa tu contraseña</string>
+    <string name="forgotPassword">¿Olvidaste tu contraseña?</string>
+    <string name="resetPassword">Recuperar Contraseña</string>
+    <string name="slogan">"Comer comida saludable es la forma más simple de librarse del exceso de peso y llegar a ser saludable y delgado para siempre". \n (Subodh Gupta)</string>
+    <string name="title_activity_menu_navigation">Menu Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Food Soufflé</string>
+    <string name="nav_header_subtitle">deyson19@mail.com</string>
+    <string name="nav_header_desc">Header</string>
+    <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con medicamentos; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
+    <string name="mensaje_compartir">Si te ha gustado nuestra aplicación te invitamos a que la compartas con tus amigos o familiares. Sería magnifico que nos ayudes a llegar a más personas.</string>
+
+    <!-- Aquí van los nombres de cada parte del menú-->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Menu</string>
+    <string name="menu_available">Menu Disponible</string>
+    <string name="menu_slideshow">Realizar Pedido</string>
+    <string name="menu_ubicanos">Ubícanos</string>
+    <string name="menu_contactar">Contactar</string>
+    <string name="menu_compartir">Compartir App</string>
+
+
+    <string name="datosDelusuario">Y ahora \n su información:</string>
+    <string name="userDatesHorizontalView">Y ahora tu información</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="escribe_tu_mensaje">Por favor ingrese su mensaje...</string>
+    <string name="enviar">Enviar mensaje</string>
+    <string name="asunto">Asunto</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="tu_correo">Correo del usuario:</string>
+    <string name="tu_nombre">Nombre de usuario:</string>
+    <string name="menu_disponible">Este es nuestro catalogo.</string>
+    <string name="mensajeContactar">Para ponerse en contacto con nosotros por favor complete el siguiente formulario.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!--TODO: información del desarrollador-->
+    <string name="developer">Desarrollador</string>
+    <string name="developerDescription">Hola a todos, mi nombre es Deyson Vente, actualmente soy estudiante de Desarrollo de Software y soy quien ha desarrollado esta aplicación. Para mi es un placer poder compartir con ustedes un poco de lo que he ido aprendiendo, todavía estoy en la fase de iniciación en este campo y mi propósito es convertirme en un profesional. \n He ido desarrollando esta aplicación gracias a diversas fuentes de información que he visitado y formación que he adquirido. Así mismo he recurrido al uso de librerías y documentacion que Google proporciona para su comunidad.</string>
+    <string name="developerContact">Contáctame</string>
+
+    <!--TODO:revisamos el estado de la conexion a internet-->
+    <string name="conexionError">Por favor revise su conexion a internet !</string>
+
+    <!-- TODO:mensajes de error al intenetar registrarse o entrar-->
+    <string name="shortPassword">ERROR, ingrese una contraseña válida, mayor de 5 caracteres</string>
+    <string name="emptyValu">Oye, este campo no puede estar vacío, verifica la información</string>
+    <string name="errorToCreate">ERROR, no pudimos crear este usuario. \n Vuelve a intentarlo</string>
+    <string name="errorToRegister">ERROR, intente con otro nombre de usuario y contraseña</string>
+    <string name="errorToFindUser" tools:ignore="StringEscaping">Lo sentimos, no pudimos encontrar este usuario</string>
+
+    <!--TODO:Mensaje de confirmacion antes de salir-->
+    <string name="exitMessage">¿Estás seguro de que quieres salir?</string>
+    <string name="menu_perfil">Mi Perfil</string>
+</resources>

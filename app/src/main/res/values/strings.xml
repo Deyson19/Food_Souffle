@@ -1,31 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Food Soufflé</string>
-    <string name="login">Log In</string>
-    <string name="loginEs">Iniciar Sesión</string>
-    <string name="registerUser">Sign Up</string>
-    <string name="registrarse">Registrarse</string>
-    <string name="textUserName">Please enter an User Name</string>
-    <string name="textUserNameEs">Ingresa un nombre de usuario</string>
+    <string name="login">Log in</string>
+    <string name="registerUser">SignUp</string>
+    <string name="textUserName">Please enter an Username</string>
     <string name="textEmail">Please enter your email address</string>
-    <string name="textEmailEs">Ingresa tu dirección de correo</string>
     <string name="textPassword">Please enter your password</string>
-    <string name="textPasswordEs">Ingresa tu contraseña</string>
     <string name="forgotPassword">Did you forget your password?</string>
-    <string name="forgotPasswordEs">¿Olvidaste tu contraseña?</string>
     <string name="resetPassword">Reset Password</string>
-    <string name="resetPasswordEs">Recuperar Contraseña</string>
-    <string name="slogan">"Comer comida saludable es la forma más simple de librarse del exceso de peso y llegar a ser saludable y delgado para siempre". \n (Subodh Gupta)</string>
-    <string name="sloganEnglish">"Eating healthy food is the simplest way to shed excess weight and become healthy and slim forever." \ n (Subodh Gupta)</string>
+    <string name="slogan">"Eating healthy food is the simplest way to shed excess weight and become healthy and slim forever." \ n (Subodh Gupta)</string>
     <string name="title_activity_menu_navigation">Menu Navigation</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Food Soufflé</string>
     <string name="nav_header_subtitle">deyson19@mail.com</string>
     <string name="nav_header_desc">Header</string>
-    <string name="mensajeInicio">"El doctor del futuro no tratará más al ser humano con medicamentos; curará y prevendrá las enfermedades con la nutrición". \n (Thomas Edison)</string>
-    <string name="mensajeInicioEnglish">"The doctor of the future will no longer treat human beings with medicine; he will cure and prevent diseases with nutrition." \n (Thomas Edison)</string>
-    <string name="mensaje_compartir">Si te ha gustado nuestra aplicación te invitamos a que la compartas con tus amigos o familiares. Sería magnifico que nos ayudes a llegar a más personas.</string>
-    <string name="mensaje_compartirEnglish">If you liked our application, we invite you to share it with your friends or family. It would be great if you help us reach more people.</string>
+    <string name="mensajeInicio">"The doctor of the future will no longer treat human beings with medicine; he will cure and prevent diseases with nutrition." \n (Thomas Edison)</string>
+    <string name="mensaje_compartir">If you liked our application, we invite you to share it with your friends or family. It would be great if you help us reach more people.</string>
 
     <!-- Aquí van los nombres de cada parte del menú-->
     <string name="menu_home">Home</string>
@@ -68,8 +58,7 @@
     <string name="developerContact">Contact Me</string>
 
     <!--TODO:revisamos el estado de la conexion a internet-->
-    <string name="conexionError">Please check your internet conexion!!</string>
-    <string name="conexionErrorEs">Por favor, revisa tu conexion a internet!!</string>
+    <string name="conexionError">Please check your internet conexion!</string>
 
     <!-- TODO:mensajes de error al intenetar registrarse o entrar-->
     <string name="shortPassword">ERROR, please enter a valid password, greater than 5 characters</string>
@@ -79,5 +68,5 @@
     <string name="errorToFindUser" tools:ignore="StringEscaping">Sorry, we couldn't find this user </string>
 
     <!--TODO:Mensaje de confirmacion antes de salir-->
-    <string name="exitMessage">Are you sure you want to quit?</string>
+    <string name="exitMessage">Are you sure you want to exit?</string>
 </resources>

@@ -77,4 +77,9 @@
     <string name="linkApp">You can download it from this link:</string>
     <string name="notice">Please select the means by which you want to share the application:</string>
     <string name="errorApp">Error when trying to share by this means, please check that you have installed the official application of</string>
+    <string name="attentionBeforeToExit">Attention:</string>
+    <string name="messageBeforeToExit">What do you want to do?</string>
+    <string name="nothing">Nothing</string>
+    <string name="awesomeForKeep">Awesome, thanks for staying.</string>
+    <string name="backToMenu">Back to Menu</string>
 </resources>

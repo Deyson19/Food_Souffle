@@ -67,4 +67,9 @@
     <string name="linkApp">Puedes descargarla desde este link: </string>
     <string name="notice">Por favor selecciona el medio por el cual desea compartir la aplicación</string>
     <string name="errorApp">Error al intentar compartir por este medio, por favor comprueba que tengas instalada la aplicación oficial de</string>
+    <string name="attentionBeforeToExit">Atención:</string>
+    <string name="messageBeforeToExit">¿Que deseas hacer?</string>
+    <string name="nothing">Nada</string>
+    <string name="awesomeForKeep">Genial, es bueno que te quedes.</string>
+    <string name="backToMenu">Volver al Menu</string>
 </resources>

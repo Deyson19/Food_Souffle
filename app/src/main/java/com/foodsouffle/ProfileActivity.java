@@ -86,24 +86,24 @@ public class ProfileActivity extends AppCompatActivity {
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setTitle("Attention:");
-        builder.setMessage("What do you want to do?");
+        builder.setTitle(R.string.attentionBeforeToExit);
+        builder.setMessage(R.string.messageBeforeToExit);
         builder.setIcon(R.drawable.ic_warning);
-        builder.setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.exit, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 finish();
                 isDestroyed();
             }
         });
-        builder.setNeutralButton("Nothing", new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(R.string.nothing, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(ProfileActivity.this,"Awesome, thanks for staying.",Toast.LENGTH_LONG).show();
+                Toast.makeText(ProfileActivity.this, R.string.awesomeForKeep,Toast.LENGTH_LONG).show();
             }
         });
 
-        builder.setNegativeButton("Back to Menu", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.backToMenu, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent exit = new Intent(ProfileActivity.this,MenuNavigation.class);

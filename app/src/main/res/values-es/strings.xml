@@ -51,13 +51,20 @@
     <string name="conexionError">Por favor revise su conexion a internet !</string>
 
     <!-- TODO:mensajes de error al intenetar registrarse o entrar-->
-    <string name="shortPassword">ERROR, ingrese una contraseña válida, mayor de 5 caracteres</string>
-    <string name="emptyValu">Oye, este campo no puede estar vacío, verifica la información</string>
+    <string name="shortPassword">ERROR, ingrese una contraseña válida, debe ser mayor de 5 caracteres</string>
+    <string name="emptyValu">HEY, este campo no puede estar vacío, verifica la información.</string>
     <string name="errorToCreate">ERROR, no pudimos crear este usuario. \n Vuelve a intentarlo</string>
     <string name="errorToRegister">ERROR, intente con otro nombre de usuario y contraseña</string>
-    <string name="errorToFindUser" tools:ignore="StringEscaping">Lo sentimos, no pudimos encontrar este usuario</string>
+    <string name="errorToFindUser" tools:ignore="StringEscaping">Lo sentimos, no pudimos encontrar este usuario. \n Revisa tus datos y conexion a internet</string>
 
     <!--TODO:Mensaje de confirmacion antes de salir-->
     <string name="exitMessage">¿Estás seguro de que quieres salir?</string>
     <string name="menu_perfil">Mi Perfil</string>
+    <string name="exitMessageTitle">Cerrar Sesion</string>
+    <string name="exit">Salir</string>
+    <string name="back">Regresar</string>
+    <string name="sendApp">Hola, espero te encuentres bien. \nTe invito a que descargues esta aplicación para realizar pedidos desde casa.</string>
+    <string name="linkApp">Puedes descargarla desde este link: </string>
+    <string name="notice">Por favor selecciona el medio por el cual desea compartir la aplicación</string>
+    <string name="errorApp">Error al intentar compartir por este medio, por favor comprueba que tengas instalada la aplicación oficial de</string>
 </resources>

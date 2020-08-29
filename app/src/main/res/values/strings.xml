@@ -28,6 +28,7 @@
     <string name="menu_perfil">My Profile</string>
 
 
+
     <string name="datosDelusuario">And Now \n Your Information:</string>
     <string name="userDatesHorizontalView">And now, your information</string>
     <string name="title_activity_maps">Map</string>
@@ -69,4 +70,11 @@
 
     <!--TODO:Mensaje de confirmacion antes de salir-->
     <string name="exitMessage">Are you sure you want to exit?</string>
+    <string name="exitMessageTitle">Log Out</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+    <string name="sendApp">Hello, I hope you are well. \n I invite you to download this application to order from home.</string>
+    <string name="linkApp">You can download it from this link:</string>
+    <string name="notice">Please select the means by which you want to share the application:</string>
+    <string name="errorApp">Error when trying to share by this means, please check that you have installed the official application of</string>
 </resources>

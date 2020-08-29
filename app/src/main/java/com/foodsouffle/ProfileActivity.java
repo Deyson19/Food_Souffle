@@ -49,6 +49,7 @@ public class ProfileActivity extends AppCompatActivity {
             toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
             toastPosition.setGravity(Gravity.TOP,0,80);
             toastPosition.show();
+
         }
 
 

@@ -37,11 +37,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
         mEditTextEmail = findViewById(R.id.editTextEmail);
         mButtonResetPassword = findViewById(R.id.btnResetPassword);
 
-        if (isOnline()) {
-            toastPosition = Toast.makeText(this,"Welcome Back",Toast.LENGTH_LONG);
-            toastPosition.setGravity(Gravity.TOP,0,80);
-            toastPosition.show();
-        } else {
+        if (!isOnline()) {
             toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
             toastPosition.setGravity(Gravity.TOP,0,80);
             toastPosition.show();

@@ -55,11 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mButtonRegister = findViewById(R.id.btnRegister);
         mButtonLogin = findViewById(R.id.btnLogin);
 
-        if (isOnline()) {
-            toastPosition = Toast.makeText(this,"Welcome Back",Toast.LENGTH_LONG);
-            toastPosition.setGravity(Gravity.TOP,0,80);
-            toastPosition.show();
-        } else {
+        if (!isOnline()) {
             toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
             toastPosition.setGravity(Gravity.TOP,0,80);
             toastPosition.show();

@@ -12,12 +12,12 @@
             <item
                 android:id="@+id/back"
                 android:icon="@drawable/ic_back"
-                android:title="Back"
+                android:title="@string/back"
                 app:showAsAction="never" />
             <item
                 android:id="@+id/exit"
                 android:icon="@drawable/ic_exit_to_app"
-                android:title="Exit"
+                android:title="@string/exit"
                 app:showAsAction="never" />
         </menu>
     </item>

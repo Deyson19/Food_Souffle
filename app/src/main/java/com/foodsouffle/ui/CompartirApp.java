@@ -20,10 +20,10 @@ import com.foodsouffle.R;
 public class CompartirApp extends Fragment {
 
     private CompartirAppViewModel mViewModel;
-    String enviar = "Hola, espero te encuentres bien. \n Te invito a que descargues esta aplicación para realizar pedidos desde casa. ";
-    String linkApp = "Puedes descargarla desde este link: "+ "https://youtu.be/fVO6R-NQw-s?t=2780";
-    String indicacion = "Por favor selecciona el medio por el cual desea compartir la aplicación";
-    String errorApp = "Error al intentar compartir por este medio, porfavor comprueba que tengas instalada la aplicación oficial de";
+    String sendApp = getString(R.string.sendApp);
+    String linkApp = getString(R.string.linkApp)+ "https://youtu.be/fVO6R-NQw-s?t=2780";
+    String notice = getString(R.string.notice);
+    String errorApp = getString(R.string.errorApp);
 
     public static CompartirApp newInstance() {
         return new CompartirApp();
@@ -44,11 +44,11 @@ public class CompartirApp extends Fragment {
             public void onClick(View view) {
                 Intent share = new Intent(Intent.ACTION_SEND);
                 share.setType("text/plain");
-                /*la variable con el link lo tenemos en el método principal.
+                /*la variable con el link lo tenemos en el en la parte inicial.
                 ahora lo que haremos es pasarle al usuario el link que va a compartir
                  */
-                share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
-                startActivity(Intent.createChooser(share,indicacion));
+                share.putExtra(Intent.EXTRA_TEXT,sendApp+linkApp);
+                startActivity(Intent.createChooser(share,notice));
 
             }
         });
@@ -59,8 +59,7 @@ public class CompartirApp extends Fragment {
                 try {
                     Intent share = new Intent(Intent.ACTION_SEND);
                     share.setType("text/plain");
-                    //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                    share.putExtra(Intent.EXTRA_TEXT, enviar + linkApp);
+                    share.putExtra(Intent.EXTRA_TEXT, sendApp + linkApp);
                     share.setPackage("com.facebook.katana");
                     startActivity(share);
                 }catch (Exception e){
@@ -75,12 +74,11 @@ public class CompartirApp extends Fragment {
                 try {
                     Intent share = new Intent(Intent.ACTION_SEND);
                     share.setType("text/plain");
-                    //share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                    share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
+                    share.putExtra(Intent.EXTRA_TEXT,sendApp+linkApp);
                     share.setPackage("com.instagram.android");
                     startActivity(share);
                 }catch (Exception e){
-                    Toast.makeText(getContext(),errorApp+"Instagram",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(),errorApp+" Instagram",Toast.LENGTH_LONG).show();
                 }
 
             }
@@ -92,8 +90,7 @@ public class CompartirApp extends Fragment {
                 try {
                     Intent share = new Intent(Intent.ACTION_SEND);
                     share.setType("text/plain");
-                    // share.putExtra(Intent.EXTRA_SUBJECT,enviar);
-                    share.putExtra(Intent.EXTRA_TEXT,enviar+linkApp);
+                    share.putExtra(Intent.EXTRA_TEXT,sendApp+linkApp);
                     share.setPackage("com.whatsapp");
                     startActivity(share);
                 }catch (Exception e){

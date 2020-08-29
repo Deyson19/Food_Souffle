@@ -47,11 +47,7 @@ public class Perfil extends AppCompatActivity {
         mTextViewName = findViewById(R.id.textViewName);
         mTextViewMail = findViewById(R.id.textViewMail);
 
-        if (isOnline()) {
-            toastPosition = Toast.makeText(this,"Hello",Toast.LENGTH_LONG);
-            toastPosition.setGravity(Gravity.BOTTOM,0,0);
-            toastPosition.show();
-        } else {
+        if (!isOnline()) {
             toastPosition = Toast.makeText(this,R.string.conexionError,Toast.LENGTH_LONG);
             toastPosition.setGravity(Gravity.BOTTOM,0,0);
             toastPosition.show();
@@ -61,7 +57,7 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alerBuilder = new AlertDialog.Builder(Perfil.this);
-                alerBuilder.setTitle("Log Out");
+                alerBuilder.setTitle(R.string.exitMessageTitle);
                 alerBuilder.setMessage(R.string.exitMessage);
                 alerBuilder.setCancelable(false);
 

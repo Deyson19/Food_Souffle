@@ -1,5 +1,6 @@
 package com.foodsouffle;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +36,7 @@ public class AdapterList extends BaseAdapter {
         return 0;
     }
 
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(final int position, View view, ViewGroup parent) {
 
@@ -50,12 +52,7 @@ public class AdapterList extends BaseAdapter {
         value.setText(listPojos.get(position).getValue());
         image.setImageResource(listPojos.get(position).getImages());
 
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context,"Menú: "+position,Toast.LENGTH_LONG).show();
-            }
-        });
+
         return view;
     }
 }

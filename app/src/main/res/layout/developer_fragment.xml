@@ -26,7 +26,9 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="1dp"
-                app:srcCompat="@drawable/developer_image" />
+                app:srcCompat="@drawable/developer_image"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"

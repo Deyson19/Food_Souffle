@@ -31,7 +31,7 @@
     <string name="datosDelusuario">Y ahora \n su información:</string>
     <string name="userDatesHorizontalView">Y ahora tu información</string>
     <string name="title_activity_maps">Map</string>
-    <string name="escribe_tu_mensaje">Por favor ingrese su mensaje...</string>
+    <string name="escribe_tu_mensaje">Por favor ingrese su mensaje…</string>
     <string name="enviar">Enviar mensaje</string>
     <string name="asunto">Asunto</string>
     <string name="cerrar_sesion">Cerrar sesión</string>
@@ -72,4 +72,11 @@
     <string name="nothing">Nada</string>
     <string name="awesomeForKeep">Genial, es bueno que te quedes.</string>
     <string name="backToMenu">Volver al Menu</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="value">Costo:</string>
+    <string name="share_on">Compartir Vía:</string>
+    <string name="welcome">Bienvenido:</string>
+    <string name="user_name">Tu Nombre</string>
+    <string name="enter">Entrar</string>
 </resources>

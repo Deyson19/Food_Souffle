@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
             android:scrollbarStyle="insideInset">
@@ -46,7 +46,8 @@
                     android:inputType="textEmailAddress"
                     android:textColor="@color/userData"
                     android:textColorHint="@color/userData"
-                    android:hint="@string/textEmail"/>
+                    android:hint="@string/textEmail"
+                    android:importantForAutofill="no" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,7 +64,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:hint="@string/textPassword"/>
+                    android:hint="@string/textPassword"
+                    android:importantForAutofill="no" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout

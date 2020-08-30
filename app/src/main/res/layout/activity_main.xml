@@ -16,7 +16,8 @@
             android:layout_gravity="center"
             android:layout_marginBottom="1dp"
             app:srcCompat="@drawable/food_souffle"
-            android:contentDescription="TODO"/>
+            android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <EditText
             android:id="@+id/edtTextName"
@@ -48,7 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:hint="@string/textPassword"/>
+            android:hint="@string/textPassword"
+            android:importantForAutofill="no" />
     </com.google.android.material.textfield.TextInputLayout>
 
 

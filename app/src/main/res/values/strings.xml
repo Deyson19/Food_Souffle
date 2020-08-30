@@ -82,4 +82,11 @@
     <string name="nothing">Nothing</string>
     <string name="awesomeForKeep">Awesome, thanks for staying.</string>
     <string name="backToMenu">Back to Menu</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="value">Value:</string>
+    <string name="share_on">Share on:</string>
+    <string name="welcome">Welcome:</string>
+    <string name="user_name">User Name</string>
+    <string name="enter">Enter</string>
 </resources>

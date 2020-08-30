@@ -26,7 +26,8 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="1dp"
-                app:srcCompat="@drawable/food_souffle" />
+                app:srcCompat="@drawable/food_souffle"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -44,7 +45,8 @@
                 android:fontFamily="monospace"
                 android:hint="@string/asunto"
                 android:layout_marginTop="10dp"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:autofillHints="no" />
 
             <EditText
                 android:id="@+id/editTextTextMensaje"
@@ -54,7 +56,8 @@
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
                 android:layout_marginTop="10dp"
-                android:hint="@string/escribe_tu_mensaje"/>
+                android:hint="@string/escribe_tu_mensaje"
+                android:importantForAutofill="no" />
 
             <Button
                 android:id="@+id/btnEnviar"

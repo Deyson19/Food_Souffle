@@ -10,7 +10,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:id="@+id/rl1"
@@ -58,7 +59,7 @@
                 android:textStyle="bold"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:fontFamily="@font/allerta_stencil"
-                android:text="Share on:"/>
+                android:text="@string/share_on"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -76,29 +77,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
 
                 <Button
                     android:id="@+id/facebook"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="80dp"
-                    android:background="@drawable/facebook" />
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/facebook"
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/instagram"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="50dp"
-                    android:background="@drawable/instagram"/>
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/instagram"
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/whatsapp"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/whatsapp"/>
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/whatsapp"
+                    tools:ignore="ButtonStyle" />
             </LinearLayout>
         </RelativeLayout>
 

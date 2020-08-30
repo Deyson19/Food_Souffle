@@ -20,10 +20,11 @@ import com.foodsouffle.R;
 public class CompartirApp extends Fragment {
 
     private CompartirAppViewModel mViewModel;
-    String sendApp = getString(R.string.sendApp);
-    String linkApp = getString(R.string.linkApp)+ "https://youtu.be/fVO6R-NQw-s?t=2780";
-    String notice = getString(R.string.notice);
-    String errorApp = getString(R.string.errorApp);
+    String sendApp = "Hola, espero te encuentres bien.\nTe invito a que descargues esta aplicación para realizar pedidos desde casa. ";
+    String linkApp = "Puedes descargarla desde este link: "+ "https://youtu.be/fVO6R-NQw-s?t=2780";
+    String notice = "Share App:";
+    String errorApp = "Error al intentar compartir por este medio, porfavor comprueba que tengas instalada la aplicación oficial de";
+
 
     public static CompartirApp newInstance() {
         return new CompartirApp();

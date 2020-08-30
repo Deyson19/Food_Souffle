@@ -57,10 +57,10 @@ public class MenuNavigation extends AppCompatActivity {
         if(item.getItemId()==R.id.salir){
             final AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setCancelable(false);
-            builder.setTitle("Exit");
+            builder.setTitle(R.string.exitToApp);
             builder.setMessage(R.string.exitMessage);
             builder.setIcon(R.drawable.ic_warning);
-            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(R.string.exitToAppPositive, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     finish();

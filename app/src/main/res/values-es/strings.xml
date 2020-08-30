@@ -79,4 +79,6 @@
     <string name="welcome">Bienvenido:</string>
     <string name="user_name">Tu Nombre</string>
     <string name="enter">Entrar</string>
+    <string name="exitToApp">Salir</string>
+    <string name="exitToAppPositive">Si</string>
 </resources>

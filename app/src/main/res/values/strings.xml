@@ -89,4 +89,6 @@
     <string name="welcome">Welcome:</string>
     <string name="user_name">User Name</string>
     <string name="enter">Enter</string>
+    <string name="exitToApp">Exit</string>
+    <string name="exitToAppPositive">Yes</string>
 </resources>
